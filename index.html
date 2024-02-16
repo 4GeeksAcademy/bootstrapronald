@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap ronald</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a02a3ca8e2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <div class="container-fluid">
+        
+            <nav class="navbar navbar-light bg-light"> <!--todo lo de arriba bien feo.-->
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                                instagram
+                </a>
+                    <!-- Button trigger modal -->
+                    <div class="float right">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop" >
+                            create a new post
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">create a new post</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Caption</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="justify-content-left">
+                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-camera"></i></button>
+                                                <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-location-dot"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">publish</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--boton ajustes-->
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-secondary dropdown-toggle float-md-left" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </button>
+
+                            <div class="dropdown-menu dropdown-menu-lg-right">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Accesibility</a>
+                                <a class="dropdown-item" href="#">Privacy and Data</a>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </nav>
+
+            <!-- seleccion de imagenes-->
+            <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist"> <!-- botones cuadriculados-->
+                            <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                            <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </div>
+            </nav>
+
+                <div class="tab-content" id="nav-tabContent"> <!--contenido de los botones-->
+                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"> <!-- cuadriculado boton-->
+                        <div class="container-fluid">
+                            <div class="row">
+
+                              <div class="col-sm "> <!--primera columna-->
+                                <img src="https://img.freepik.com/foto-gratis/hombre-jugando-padel_657883-308.jpg?w=996&t=st=1708026277~exp=1708026877~hmac=72e04f8130a202e5ed36eb8a9673b439e33f309624e678fac464c26f470411f1" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/foto-gratis/nadador-masculino-nadando-trazo-mariposa_171337-7610.jpg?w=996&t=st=1708026626~exp=1708027226~hmac=49f648c6210d0eeaaae91991b8843ff6f9886353e8ea485be3c3d1130adb5204" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/foto-gratis/vuelo-hermoso-jugador-baloncesto-masculino-afroamericano-movimiento-accion-luz-neon-pared-azul_155003-40476.jpg?w=996&t=st=1708026654~exp=1708027254~hmac=245080427252cfa28a170a7c3816b1cf564f7f4d60fc798719f2e82666c814f7" class="img-fluid my-3">
+                              </div>
+
+                              <div class="col-sm "> <!--segunda columna-->
+                                <img src="https://img.freepik.com/foto-gratis/gente-tiro-completo-botellas-agua_23-2149722068.jpg?w=996&t=st=1708026683~exp=1708027283~hmac=b8d497fc27081b9d26d10670c685e46e5a390320e7158e540e8ee5d3bf021bd6" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/foto-gratis/personas-que-trabajan-interior-junto-pesas_23-2149175410.jpg?w=996&t=st=1708026753~exp=1708027353~hmac=2bce58a1af9677fd6243e3f53c676490e3d5196be4d2cce00572000e4fa49c48" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/foto-gratis/karateca-cinturon-rojo_23-2148990931.jpg?w=996&t=st=1708026846~exp=1708027446~hmac=963ede4428487edc2e82d7c264e5ad9c4dc6c08ff569f8ca0ccbe0d02d99bb91" class="img-fluid my-3">
+                              </div>
+
+                              <div class="col-sm "> <!--tercera columna-->
+                                <img src="https://img.freepik.com/foto-gratis/chica-posando-voleibol_23-2149450980.jpg?w=996&t=st=1708027034~exp=1708027634~hmac=d25241818e6ad983b019b357abece17df9d6c76316817640f8363952cb7a4922" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/foto-gratis/urbano-trafico-camino-cityscape-noche_1359-1052.jpg?w=996&t=st=1708027205~exp=1708027805~hmac=7b985c5a00ce15cbf8ca66d2651e396941f5af57ec32c42a9d90c5aff48b6a56" class="img-fluid my-3">
+                                <img src="https://img.freepik.com/fotos-premium/joven-conduce-automovil-gokart-velocidad-pista-carreras-juegos-go-kart-es-deporte-motor-ocio-popular_600776-20425.jpg?w=996" class="img-fluid my-3">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> <!--cuadrado solido-->
+                        <div class="container-fluid">
+                            <div class="card mx-auto mb-4" style="width: 40rem;"> <!--primer post-->
+                                <div class="card-body p-2">
+                                <div class="float-right">
+                                    <p>02/24</p>
+                                </div>
+                                <p class="card-text font-weight-bold">el padel</p>
+                                </div>
+                                <img src="https://img.freepik.com/foto-gratis/hombre-jugando-padel_657883-308.jpg?w=996&t=st=1708026277~exp=1708026877~hmac=72e04f8130a202e5ed36eb8a9673b439e33f309624e678fac464c26f470411f1" class="img-fluid">
+                                <div class="card-body p-2">
+                                <p class="card-text font-weight-bold mb-0">-2 Likes</p>
+                                <p class="card-text mb-3">como perder tu tiempo jugando esto...</p>
+                                </div>
+                            </div> 
+
+                            <div class="card mx-auto mb-4" style="width: 40rem;"> <!--segundo post-->
+                                <div class="card-body p-2">
+                                <div class="float-right">
+                                    <p>02/24</p>
+                                </div>
+                                <p class="card-text font-weight-bold">EL GRAN CAMBIO A FERRARI!</p>
+                                </div>
+                                <img src="https://img.freepik.com/fotos-premium/joven-conduce-automovil-gokart-velocidad-pista-carreras-juegos-go-kart-es-deporte-motor-ocio-popular_600776-20425.jpg?w=996" class="img-fluid">
+                                <div class="card-body p-2">
+                                <p class="card-text font-weight-bold mb-0">6894 Likes</p>
+                                <p class="card-text mb-3">Lewis Hamilton Confirma que para la temporada 2025 Estara con la Escuderia Ferrari. que pasara con Sainz??</p>
+                                </div>
+                            </div>
+
+                            <div class="card mx-auto mb-4" style="width: 40rem;"> <!--tercer post-->
+                                <div class="card-body p-2">
+                                <div class="float-right">
+                                    <p>01/24</p>
+                                </div>
+                                <p class="card-text font-weight-bold">Karate y sus niveles</p>
+                                </div>
+                                <img src="https://img.freepik.com/foto-gratis/karateca-cinturon-rojo_23-2148990931.jpg?w=996&t=st=1708026846~exp=1708027446~hmac=963ede4428487edc2e82d7c264e5ad9c4dc6c08ff569f8ca0ccbe0d02d99bb91" class="img-fluid">
+                                <div class="card-body p-2">
+                                <p class="card-text font-weight-bold mb-0">603 Likes</p>
+                                <p class="card-text mb-3">cuanto sabes acerca de karate? Sabias que hay una cinta roja? mas inf0 en <strong>#karatekid</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            <!-- hasta qui-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
+
+    <!--<i class="fa-brands fa-instagram"></i> icono de instagram-->
+    <!-- <i class="fa-solid fa-gear"></i> ajuste icono-->
+    <!--<i class="fa-solid fa-camera"></i> camara-->
+    <!--<i class="fa-solid fa-location-dot"></i> icono localizacion-->
+    <!--<i class="fa-solid fa-table-cells"></i> tabla cells-->
+    <!--<i class="fa-solid fa-square"></i> cuadrado-->
